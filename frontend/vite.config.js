@@ -9,4 +9,9 @@ export default defineConfig({
       presets: [reactCompilerPreset({ target: "18" })],
     }),
   ],
+  server: {
+    port: 5173,
+    // I'm using Proxy to solve CORS warning.
+    // proxy: { "/chat": "http://localhost:8000" },
+  },
 });
