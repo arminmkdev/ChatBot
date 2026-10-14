@@ -14,7 +14,6 @@ export default function ChatMessages({ messages, loading, onSuggest }) {
   const containerRef = useRef(null);
   const stickToBottom = useRef(true);
 
-  // تشخیص این‌که کاربر اسکرول کرده یا نه
   const handleScroll = () => {
     const el = containerRef.current;
     if (!el) return;
